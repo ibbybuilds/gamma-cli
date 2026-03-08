@@ -210,7 +210,7 @@ This repo includes an [Agent Skill](https://agentskills.io) at `skills/gamma/SKI
 ### Install via skills.sh
 
 ```bash
-npx skills add YOUR_USERNAME/gamma-cli
+npx skills add ibbybuilds/gamma-cli
 ```
 
 ### Or copy manually
@@ -262,7 +262,7 @@ gamma generate -i "test" -m generate --dry-run
 ## Development
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/gamma-cli
+git clone https://github.com/ibbybuilds/gamma-cli
 cd gamma-cli
 npm install
 npm run build         # tsup -> dist/cli.js
