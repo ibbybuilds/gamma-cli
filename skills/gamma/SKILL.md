@@ -1,6 +1,6 @@
 ---
 name: gamma
-description: Create presentations, documents, webpages, and social posts using the Gamma API. Use when the user asks to create slides, presentations, decks, documents, pitch decks, reports, or any visual content. Also use when they say things like "make a deck", "turn this into slides", "create a pptx", "I need a presentation for my meeting", or want to convert notes/text into polished visual content. Even if they don't mention Gamma by name, if the task is about generating presentations or documents from text, this is the right skill.
+description: Create presentations, documents, webpages, and social posts using the Gamma API. Use when the user wants to make slides, decks, pitch decks, documents, or convert text/notes into polished visual content — even if they don't mention Gamma by name.
 argument-hint: [topic or content description]
 ---
 
