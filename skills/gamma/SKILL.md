@@ -155,19 +155,21 @@ gamma config delete apiKey
 
 ## Workflow Patterns
 
-**Blocking (simple):** Just run it and wait. Takes 20-60 seconds.
-```bash
-gamma generate -i "..." -m generate
-# Returns JSON with gammaUrl
-```
+**Always use the async (two-step) pattern.** The blocking pattern can timeout or lose output in non-interactive terminals, MCP runners, and similar environments. The async pattern is reliable everywhere.
 
-**Async (for multitasking):** Start generation, do other work, check later.
+**Step 1 — Start generation (returns instantly):**
 ```bash
 gamma generate -i "..." -m generate --no-wait
-# Returns: {"generationId":"abc","status":"submitted"}
-gamma status abc --wait
-# Returns when complete with gammaUrl
 ```
+Response: `{"generationId":"abc","status":"submitted"}`
+
+**Step 2 — Poll for completion:**
+```bash
+gamma status abc --wait
+```
+Response: `{"generationId":"abc","status":"completed","gammaUrl":"https://gamma.app/docs/yyy","credits":{...}}`
+
+This two-step approach works in every environment and lets you do other work while waiting.
 
 ## Presenting Results to the User
 
@@ -185,6 +187,7 @@ If you get an error:
 - **Validation error** (exit code 1) — The CLI caught a bad parameter locally. Read the error JSON — it lists allowed values. Fix and retry.
 - **API error** — Check the error message. Common causes: invalid API key, rate limiting, insufficient credits.
 - **Timeout** — The generation took too long. Use `gamma status GENERATION_ID --wait` to check if it's still running.
+- **Empty or missing output** — If a command returns no visible output, you're likely in a non-interactive terminal. Always use `--no-wait` and poll with `gamma status` separately.
 
 ## Validation
 
