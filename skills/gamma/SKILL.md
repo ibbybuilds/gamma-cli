@@ -10,7 +10,19 @@ Create presentations, documents, webpages, and social posts via the Gamma API us
 
 ## Before You Start
 
-Check if the API key is configured:
+First, check if the CLI is installed:
+
+```bash
+gamma --version
+```
+
+If the command is not found, install it:
+
+```bash
+npm install -g gamma-ai
+```
+
+Then check if the API key is configured:
 
 ```bash
 gamma config get apiKey
