@@ -8,7 +8,7 @@
 
 <br>
 
-[![npm version](https://img.shields.io/npm/v/gamma-cli.svg?style=flat-square)](https://www.npmjs.com/package/gamma-cli)
+[![npm version](https://img.shields.io/npm/v/gamma-ai.svg?style=flat-square)](https://www.npmjs.com/package/gamma-ai)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D18-brightgreen?style=flat-square)](https://nodejs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=flat-square)](https://www.typescriptlang.org/)
@@ -30,7 +30,7 @@ Bundled with an [Agent Skill](https://agentskills.io) for automatic discovery by
 ## 📟 Quick Start
 
 ```bash
-npm install -g gamma-cli
+npm install -g gamma-ai
 ```
 
 ```bash
@@ -256,7 +256,7 @@ This repo ships with an [Agent Skill](https://agentskills.io) at `skills/gamma/S
 ### Install the skill
 
 ```bash
-# Built-in (after npm install -g gamma-cli)
+# Built-in (after npm install -g gamma-ai)
 gamma skill --install claude          # → ~/.claude/skills/gamma/SKILL.md
 gamma skill --install cursor          # → .cursor/skills/gamma/SKILL.md
 gamma skill --install windsurf        # → .windsurf/skills/gamma/SKILL.md
