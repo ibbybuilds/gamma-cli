@@ -1,0 +1,38 @@
+{
+  "name": "gamma-cli",
+  "version": "0.1.0",
+  "description": "CLI tool for the Gamma API - create presentations, documents, and more from the terminal",
+  "type": "module",
+  "bin": {
+    "gamma": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/cli.js",
+    "test": "npm run build && node --test test/*.test.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "gamma",
+    "cli",
+    "presentation",
+    "ai",
+    "slides",
+    "document",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^13.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
