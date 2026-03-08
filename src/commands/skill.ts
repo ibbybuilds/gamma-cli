@@ -10,6 +10,7 @@ const TARGETS: Record<string, string> = {
   cursor: join('.cursor', 'skills', 'gamma'),
   copilot: join('.cursor', 'skills', 'gamma'),
   windsurf: join('.windsurf', 'skills', 'gamma'),
+  aios: join('.aios', 'skills', 'gamma'),
 };
 
 function getSkillPath(): string {

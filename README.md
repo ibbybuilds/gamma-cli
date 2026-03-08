@@ -260,6 +260,7 @@ This repo ships with an [Agent Skill](https://agentskills.io) at `skills/gamma/S
 gamma skill --install claude          # → ~/.claude/skills/gamma/SKILL.md
 gamma skill --install cursor          # → .cursor/skills/gamma/SKILL.md
 gamma skill --install windsurf        # → .windsurf/skills/gamma/SKILL.md
+gamma skill --install aios            # → .aios/skills/gamma/SKILL.md
 
 # Or via skills.sh
 npx skills add ibbybuilds/gamma-cli

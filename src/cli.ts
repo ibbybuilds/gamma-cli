@@ -12,7 +12,7 @@ const program = new Command();
 program
   .name('gamma')
   .description('CLI for the Gamma API - create presentations, documents, and more')
-  .version('0.1.1')
+  .version('0.1.2')
   .option('--format <fmt>', 'Output format: json, table, yaml', 'json')
   .option('--pretty', 'Shorthand for --format table');
 

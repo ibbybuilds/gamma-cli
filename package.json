@@ -1,6 +1,6 @@
 {
   "name": "gamma-ai",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "CLI tool for the Gamma API - create presentations, documents, and more from the terminal",
   "type": "module",
   "bin": {
