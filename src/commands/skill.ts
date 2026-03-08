@@ -7,10 +7,10 @@ import { output, errorOutput, type OutputOpts } from '../utils/output.js';
 
 const TARGETS: Record<string, string> = {
   claude: join(homedir(), '.claude', 'skills', 'gamma'),
-  cursor: join('.cursor', 'skills', 'gamma'),
-  copilot: join('.cursor', 'skills', 'gamma'),
-  windsurf: join('.windsurf', 'skills', 'gamma'),
-  aios: join('.aios', 'skills', 'gamma'),
+  cursor: join(homedir(), '.cursor', 'skills', 'gamma'),
+  copilot: join(homedir(), '.cursor', 'skills', 'gamma'),
+  windsurf: join(homedir(), '.windsurf', 'skills', 'gamma'),
+  aios: join(homedir(), '.aios', 'skills', 'gamma'),
 };
 
 function getSkillPath(): string {
