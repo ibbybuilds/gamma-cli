@@ -2,7 +2,7 @@
 
 <br>
 
-<h1>⚡ gamma-cli</h1>
+<h1>⚡ gamma-ai</h1>
 
 <p><strong>Create presentations, documents, webpages & social posts — right from your terminal.</strong></p>
 
