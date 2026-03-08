@@ -65,7 +65,7 @@ That's it. One command → a full presentation with a shareable link.
 
 <br>
 
-## 🎯 Why gamma-cli?
+## 🎯 Why gamma-ai?
 
 | | |
 |---|---|

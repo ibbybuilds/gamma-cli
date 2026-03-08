@@ -31,7 +31,7 @@ export function registerSkill(program: Command): void {
       const skillPath = getSkillPath();
 
       if (!existsSync(skillPath)) {
-        errorOutput(new Error(`SKILL.md not found at ${skillPath}. Is gamma-cli installed correctly?`));
+        errorOutput(new Error(`SKILL.md not found at ${skillPath}. Is gamma-ai installed correctly?`));
         process.exit(1);
       }
 
