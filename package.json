@@ -6,6 +6,15 @@
   "bin": {
     "gamma": "./dist/cli.js"
   },
+  "files": [
+    "dist",
+    "skills",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibbybuilds/gamma-cli"
+  },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",

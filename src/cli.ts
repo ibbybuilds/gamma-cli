@@ -5,6 +5,7 @@ import { registerThemes } from './commands/themes.js';
 import { registerFolders } from './commands/folders.js';
 import { registerStatus } from './commands/status.js';
 import { registerConfig } from './commands/config.js';
+import { registerSkill } from './commands/skill.js';
 
 const program = new Command();
 
@@ -21,5 +22,6 @@ registerThemes(program);
 registerFolders(program);
 registerStatus(program);
 registerConfig(program);
+registerSkill(program);
 
 program.parse();

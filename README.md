@@ -253,20 +253,19 @@ $ gamma generate -i "test" --mode badvalue
 
 This repo ships with an [Agent Skill](https://agentskills.io) at `skills/gamma/SKILL.md` — compatible with **30+ AI coding tools** including Claude Code, Cursor, Windsurf, and Copilot.
 
-### Install via skills.sh
+### Install the skill
 
 ```bash
+# Built-in (after npm install -g gamma-cli)
+gamma skill --install claude          # → ~/.claude/skills/gamma/SKILL.md
+gamma skill --install cursor          # → .cursor/skills/gamma/SKILL.md
+gamma skill --install windsurf        # → .windsurf/skills/gamma/SKILL.md
+
+# Or via skills.sh
 npx skills add ibbybuilds/gamma-cli
-```
 
-### Or copy manually
-
-```bash
-# Claude Code
-cp -r skills/gamma ~/.claude/skills/
-
-# Cursor / VS Code Copilot
-cp -r skills/gamma .cursor/skills/
+# Or read it inline (agents can pipe this)
+gamma skill
 ```
 
 <br>
